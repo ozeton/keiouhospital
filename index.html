@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>慶應義塾大学(模写)</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
+  <script src="https://kit.fontawesome.com/6d2b6f8479.js" crossorigin="anonymous"></script>
+
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header-top-bg">
+      <div class="page-header-top  wrapper-hd">
+        <div class="page-header-nav">
+          <div class="page-header-nav-left-top">
+            <a href="#">ホーム</a>
+            <a class="header-top-border-left" href="#">お問い合わせ</a>
+            <a class="header-top-border-left" href="#">アクセス</a>
+          </div>
+          <div class="page-header-nav-left-bottom">
+            <form id="form2" action="自分のサイトURL" method="get">
+              <input id="sbox2"  id="s" name="s" type="text" placeholder="サイト内検索"/>
+              <button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+    
+        <div class="page-header-title">
+          <a href="#"><img src="img/logo_01.png" alt=""></a>
+        </div>
+    
+        <div class="page-header-nav">
+          <div class="page-header-nav-right-top">
+            <a href="#">サイトマップ</a>
+            <a class="header-top-border-left" href="#">ENGLISH</a>
+            <a class="header-top-border-left" href="#">採用情報</a>
+          </div>
+          <div class="page-header-nav-right-bottom">
+            <dl>
+              <dt>
+                文字<br>
+                サイズ
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    <a id="zoomfontbtn" href="#">拡大</a>
+                  </li>
+                  <li>
+                    <a id=returnfontbtn href="#">標準</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt class="page-header-nav-right-bottom-dt">背景変更</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <a id=changebackgroungbtn href="#">黒</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-header-bottom">
+      <div class="page-header-bottom-bg">
+        <div class="page-header-bottom-nav wrapper-hd">
+          <ul>
+
+            <li class="has-sub">
+                <a href="#">
+                  <div class="inner">
+                    来院・入院の方
+                  </div>
+                </a>
+
+              <div class="dorp-menu wrapper-sub">
+                <div class="dorp-sub-menu">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-ambulance fa-3x skyblue"></i>
+                    <p>病院へ行く</p>
+                  </div>
+                  
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>初めて受信する方
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>通院中・再来の方
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>入院・面会の方
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>人間ドッグを受診する方
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-check-circle fa-3x skyblue"></i>
+                    <p>調べる</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>医療科・部門一覧
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>病名・医師名検索
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>役割・機能
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>健康・医療情報
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-phone-alt fa-3x skyblue"></i>
+                    <p>問い合わせる</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>地図・フロア図
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>院内施設のご案内
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>よくあるお問い合わせ
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>お問い合わせ一覧
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+              </div>
+            </li>
+
+            <li class="has-sub">
+              <a href="#">
+                <div class="page-header-bottom-nav-border inner">
+                  慶應義塾大学病院について
+                </div>
+              </a>
+
+              <div class="dorp-menu wrapper-sub">
+                <div class="dorp-sub-menu">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-book fa-3x skyblue"></i>
+                    <p>基本情報</p>
+                  </div>
+                  
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>病院概要
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>診療科・部門一覧
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>統計・実績データ
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>理念・行動指針
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-hospital-alt fa-3x skyblue"></i>
+                    <p>取り組み</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>知ってほしい慶應義塾大学病院
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>病院紹介
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>病院広報誌「すゝめ」
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>ご寄付のお願い
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-check-circle fa-3x skyblue"></i>
+                    <p>調べる</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>公開講座・社会連携講座
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>取材について
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>ボランティア募集
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>お問い合わせ一覧
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+              </div>
+            </li>
+
+            <li class="has-sub">
+              <a href="#">
+                <div class="page-header-bottom-nav-border inner">
+                  医療関係の方
+                </div>
+              </a>
+
+              <div class="dorp-menu wrapper-sub">
+                <div class="dorp-sub-menu">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-user-md fa-3x skyblue"></i>
+                    <p>紹介する</p>
+                  </div>
+                  
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>患者さんの紹介について
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>診療科・部門一覧
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>病名・医師名検索
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>医療連携について
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-pencil-alt fa-3x skyblue"></i>
+                    <p>学ぶ・働く</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>採用情報
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>研修医・専修医について
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>ボランティア募集
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>医学部・医学研究科
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+
+                <div class="dorp-sub-menu sub-menu-border">
+                  <div class="dorp-sub-title-menu">
+                    <i class="fas fa-check-circle fa-3x skyblue"></i>
+                    <p>調べる</p>
+                  </div>
+
+                  <div class="dorp-sub-content-menu">
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>治験・臨床試験情報
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>統計・実績データ
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>よくあるお問い合わせ
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <p>
+                            <i class="fas fa-angle-double-right"></i>お問い合わせ一覧
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div><!-- dorp-dl-menu -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- page-header-bottom -->
+  </header>
+  
+  <article>
+    <div class="slider-bg">
+      <ul class="slider">
+        <li class="slider-items"><a href="#"><img src="img/jp-mv_01_pc_20161011.png" alt="画像1"></a></li>
+        <li class="slider-items"><a href="#"><img src="img/jp-mv_02_pc_20161011.png" alt="画像2"></a></li>
+        <li class="slider-items"><a href="#"><img src="img/jp-mv_03_pc_20161011.png" alt="画像3"></a></li>
+        <li class="slider-items"><a href="#"><img src="img/jp-mv_04_pc_20161011.png" alt="画像4"></a></li>
+        <li class="slider-items"><a href="#"><img src="img/jp-mv_05_pc_20161011.png" alt="画像5"></a></li>
+      </ul>
+    </div>
+
+      <section class="news wrapper-news">
+        <dl class="news-box">
+          <dt class="news-box-top">
+            <i class="fas fa-exclamation-circle fa-2x"></i><span>お知らせ</span>
+          </dt>
+          <dd class="news-box-bottom">
+            <ul>
+              <li>
+                <div>2021年04月09日</div>
+                <div><a href="#">新型コロナウイルスに関するお知らせ</a></div>
+              </li>
+              <li>
+                <div>2021年04月01日</div>
+                <div><a href="#">＜病院入り口＞＜開錠時間＞変更のお知らせ</a></div>
+              </li>
+              <li>
+                <div>2021年03月25日</div>
+                <div><a href="#">＜来院される皆様へ＞観戦対策についてお願い</a></div>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </section><!-- news -->
+
+      <section class="sub-menu-big-bg">
+        <div class="sub-menu-big wrapper-news">
+          <div class="sub-menu-big-box">
+            <a href="#">
+              <p>初めて受診する方</p>
+              <i class="fas fa-user-md fa-6x kon"></i>
+            </a>
+          </div>
+          <div class="sub-menu-big-box">
+            <a href="#">
+              <p>通院・再来の方</p>
+              <i class="fas fa-hospital fa-6x ao"></i>
+            </a>
+          </div>
+          <div class="sub-menu-big-box">
+            <a href="#">
+              <p>入院・面会の方</p>
+              <i class="fas fa-wheelchair fa-6x greenblue"></i>
+            </a>
+          </div>
+          <div class="sub-menu-big-box">
+            <a href="#">
+              <p>人間ドッグ</p>
+              <i class="fas fa-hospital-user fa-6x green"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="sub-menu-small-bg">
+        <div class="sub-menu-small wrapper-news">
+          <ul class="sub-menu-small-box">
+            <li>
+              <a href="#">
+                <i class="fas fa-comment-medical fa-3x small-icon"></i>
+                <p>診療科・部門一覧</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="sub-menu-small-box">
+            <li>
+              <a href="#">
+                <i class="fas fa-search fa-3x small-icon"></i>
+                <p>医師・病名検索</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="sub-menu-small-box">
+            <li>
+              <a href="#">
+                <i class="fas fa-map-marker-alt fa-3x small-icon"></i>
+                <p>地図・フロア図</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="tab-menu wrapper-news">
+        <ul>
+          <li><a href="#" class="active-1" data-id="about1">病院からのお知らせ</a></li>
+          <li><a href="#" data-id="about2">医療関係の方へお知らせ</a></li>
+          <li><a href="#" data-id="about3">採用情報</a></li>
+        </ul>
+      </section>
+
+      <div class="teb-menu-bg">
+        <section class="tab-menu-show active-2" id="about1">
+          <div class="tab-menu-about-1 wrapper-news">
+            <ul>
+              <li>
+                <div>
+                  <span>2021年4月21日</span>
+                  <span class="tab-menu-span">重要</span>
+                </div>
+                <div>
+                  <a href="#">【5月14日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月21日</span>
+                  <span class="tab-menu-span">重要</span>
+                </div>
+                <div>
+                  <a href="#">【5月14日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月21日</span>
+                  <span class="tab-menu-span">重要</span>
+                </div>
+                <div>
+                  <a href="#">【5月14日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月21日</span>
+                  <span class="tab-menu-span">重要</span>
+                </div>
+                <div>
+                  <a href="#">【5月14日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月21日</span>
+                  <span class="tab-menu-span">重要</span>
+                </div>
+                <div>
+                  <a href="#">【5月14日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="tab-menu-show" id="about2">
+          <div class="tab-menu-about-2 wrapper-news">
+            <ul>
+              <li>
+                <div>
+                  <span>2021年4月01日</span>
+                  <span class="tab-menu-span">お知らせ</span>
+                </div>
+                <div>
+                  <a href="#">初診診療担当医表</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月01日</span>
+                  <span class="tab-menu-span">お知らせ</span>
+                </div>
+                <div>
+                  <a href="#">初診診療担当医表</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月01日</span>
+                  <span class="tab-menu-span">お知らせ</span>
+                </div>
+                <div>
+                  <a href="#">初診診療担当医表</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月01日</span>
+                  <span class="tab-menu-span">お知らせ</span>
+                </div>
+                <div>
+                  <a href="#">初診診療担当医表</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>2021年4月01日</span>
+                  <span class="tab-menu-span">お知らせ</span>
+                </div>
+                <div>
+                  <a href="#">初診診療担当医表</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="tab-menu-show" id="about3">
+          <div class="tab-menu-about-3 wrapper-news">
+            <ul>
+              <li>
+                <a href="#">採用に関してはこちらのページをご確認ください。</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="wrapper-news">
+        <ul class="grid">
+          <li>
+            <a href="#">
+              <img src="img/img_feature_07.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                情報公開について
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_08.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                臨床研究推進センター
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_09.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                慶應義塾大学・医学部
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_01.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                連携による最適な医療の実践
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_02.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                知ってほしい慶應義塾大学病院
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_03.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                新しい医療への取り組み
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_04.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                新病院棟(1号館)について
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_05.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                医療・健康情報
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/img_feature_06.jpg" alt="">
+              <div>
+                <i class="fas fa-angle-double-right"></i>
+                医療人の育成
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+  </article>
+
+  <footer>
+    <div class="footer-access-bg">
+      <div class="wrapper-news">
+        <section  class="footer-access-box-left">
+          <div>
+            <dl>
+              <dt>
+                <i class="fas fa-phone-alt fa-2x yellow"></i>
+                <span>住所・電話</span>
+              </dt>
+              <dd>
+                〒160-8582 東京都新宿区信濃町3503-3353-1211（代表）
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <i class="fas fa-clock fa-2x yellow"></i>
+                <span>診療受付</span>
+              </dt>
+              <dd>
+                午前8時40分～午前11時00分
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <i class="fas fa-clock fa-2x yellow"></i>
+                <span>正面玄関開錠</span>
+              </dt>
+              <dd>
+                診療日：午前6時45分～午後7時15分<br>
+                休診日：午後1時00分～午後7時15分<br>
+                （指定の時間以外は出入口を閉鎖）
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <i class="fas fa-calendar-alt fa-2x yellow"></i>
+                <span>正面玄関開錠</span>
+              </dt>
+              <dd>
+                日曜日・第1・3土曜日<br>
+                国民の祝日・休日<br>
+                年末年始（12/30～1/4）<br>
+                慶應義塾の休日（1/10）
+              </dd>
+            </dl>
+          </div>
+  
+          <div class="footer-access-box-left-botton">
+            <ul>
+              <li><a href="#">予約について</a></li>
+              <li><a href="#">予約変更・確認</a></li>
+            </ul>
+          </div>
+        </section><!-- footer-access-box-left -->
+
+        <section class="footer-access-box-right">
+          <div>
+            <img src="img/top_map.png" alt="地図">
+            <a href="#" class="right-ccess">アクセス</a>
+            <ul class="right-map">
+              <li><a href="#">フロアマップ</a></li>
+              <li><a href="#">院内施設一覧</a></li>
+            </ul>
+          </div>
+        </section><!-- footer-access-box-right -->
+      </div>
+    </div>
+
+    <div class="footer-cel-bg">
+      <ul class="slider2">
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_01.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_02.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_04.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_05.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_06.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_07.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_08.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_09.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_10.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_11.png" alt=""></a></li>
+        <li class="slider-items"><a href="#"><img src="img/bnr_footer_12.png" alt=""></a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="wrapper-news">
+        <div class="footer-left">
+          <a href="#">このサイトについて</a>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">お問い合わせ一覧</a>
+          <a href="#">ご寄付のお願い</a>
+        </div>
+        <div class="footer-right">
+          <p>Copyright (C） Keio University All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- slick -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
